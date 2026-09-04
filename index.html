@@ -1,0 +1,4571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Keo Soksetha ♡</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=Parisienne&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+
+<style>
+
+/* =========================================================
+   COLORS
+========================================================= */
+
+:root{
+
+    --red:#9e1f35;
+    --red-dark:#761426;
+    --red-deep:#5b0f20;
+
+    --cream:#fff8ef;
+    --paper:#fffaf4;
+    --paper-dark:#ead4ca;
+
+    --pink:#e89aa4;
+    --pink-light:#f4d5d5;
+
+    --gold:#c99c53;
+
+    --ink:#422329;
+    --muted:#79595d;
+
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+    box-sizing:border-box;
+}
+
+html,
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    min-height:100%;
+}
+
+body{
+
+    background:
+        radial-gradient(
+            circle at 20% 10%,
+            rgba(255,255,255,.08),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 80% 80%,
+            rgba(255,180,190,.08),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #86182c,
+            #a51f35,
+            #7d1428
+        );
+
+    color:white;
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+
+    overflow:hidden;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+#intro{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:9999;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    padding:20px;
+
+    background:
+        radial-gradient(
+            circle at 50% 42%,
+            rgba(255,255,255,.07),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #86172b,
+            #a92038 50%,
+            #791326
+        );
+
+    transition:
+        opacity 1s ease,
+        visibility 1s ease;
+
+}
+
+#intro.hide{
+
+    opacity:0;
+
+    visibility:hidden;
+
+    pointer-events:none;
+
+}
+
+
+.intro-inner{
+
+    width:min(850px,100%);
+
+}
+
+
+.intro-eyebrow{
+
+    font-family:'DM Sans',sans-serif;
+
+    font-size:11px;
+
+    letter-spacing:5px;
+
+    text-transform:uppercase;
+
+    opacity:.72;
+
+    margin-bottom:22px;
+
+}
+
+
+.intro-title{
+
+    font-family:'Parisienne',cursive;
+
+    font-size:
+        clamp(62px,11vw,120px);
+
+    line-height:.8;
+
+    margin:0;
+
+    color:#fff;
+
+    text-shadow:
+        0 8px 30px rgba(0,0,0,.18);
+
+}
+
+
+.intro-subtitle{
+
+    font-size:21px;
+
+    font-style:italic;
+
+    margin-top:27px;
+
+    opacity:.9;
+
+}
+
+
+/* =========================================================
+   ENVELOPE
+========================================================= */
+
+.envelope-container{
+
+    width:280px;
+
+    height:225px;
+
+    position:relative;
+
+    margin:55px auto 20px;
+
+    z-index:20;
+
+}
+
+
+.envelope{
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    width:280px;
+
+    height:190px;
+
+    cursor:pointer;
+
+    perspective:1000px;
+
+    filter:
+        drop-shadow(
+            0 20px 25px rgba(0,0,0,.30)
+        );
+
+}
+
+
+/* back of envelope */
+
+.envelope-back{
+
+    position:absolute;
+
+    inset:0;
+
+    background:#f5d8ce;
+
+    border-radius:4px;
+
+    overflow:hidden;
+
+    z-index:1;
+
+}
+
+
+.envelope-back:before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    border-style:solid;
+
+    border-width:
+        0
+        140px
+        100px
+        0;
+
+    border-color:
+        transparent
+        #e5b6ad
+        transparent
+        transparent;
+
+}
+
+
+.envelope-back:after{
+
+    content:"";
+
+    position:absolute;
+
+    right:0;
+
+    bottom:0;
+
+    border-style:solid;
+
+    border-width:
+        100px
+        140px
+        0
+        0;
+
+    border-color:
+        #dfada5
+        transparent
+        transparent
+        transparent;
+
+}
+
+
+/* =========================================================
+   LETTER INSIDE ENVELOPE
+========================================================= */
+
+.envelope-letter{
+
+    position:absolute;
+
+    z-index:2;
+
+    left:22px;
+
+    right:22px;
+
+    bottom:13px;
+
+    height:140px;
+
+    background:#fffaf4;
+
+    color:#8d3344;
+
+    padding:22px;
+
+    text-align:center;
+
+    font-family:'Parisienne',cursive;
+
+    font-size:29px;
+
+    box-shadow:
+        0 3px 8px rgba(0,0,0,.08);
+
+    transition:
+        transform 1s cubic-bezier(.2,.8,.2,1);
+
+}
+
+
+.envelope.open
+.envelope-letter{
+
+    transform:
+        translateY(-125px);
+
+    z-index:6;
+
+}
+
+
+/* =========================================================
+   FLAP
+========================================================= */
+
+.envelope-flap{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:0;
+
+    height:0;
+
+    border-left:
+        140px solid transparent;
+
+    border-right:
+        140px solid transparent;
+
+    border-top:
+        100px solid #f0c9c0;
+
+    transform-origin:top center;
+    transform-style:preserve-3d;
+    backface-visibility:hidden;
+
+    transition:
+        transform 1s cubic-bezier(.2,.8,.2,1),
+        z-index 0s linear 1s;
+
+    z-index:4;
+
+}
+
+
+.envelope.open
+.envelope-flap{
+
+    transform:
+        rotateX(180deg);
+
+    /* Move the opened flap behind the letter */
+    z-index:0;
+
+}
+
+
+/* =========================================================
+   SEAL
+========================================================= */
+
+.seal{
+
+    position:absolute;
+
+    left:50%;
+
+    top:54%;
+
+    transform:
+        translate(-50%,-50%);
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle at 35% 25%,
+            #d56c7a,
+            #90172d
+        );
+
+    border:
+        2px solid
+        rgba(255,255,255,.35);
+
+    box-shadow:
+        0 7px 17px rgba(0,0,0,.25),
+        inset 0 -5px 8px rgba(0,0,0,.15);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:white;
+
+    font-size:26px;
+
+    z-index:10;
+
+}
+
+
+.tap-text{
+
+    font-family:'DM Sans',sans-serif;
+
+    font-size:10px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    opacity:.7;
+
+    animation:
+        breathing 2s ease-in-out infinite;
+
+}
+
+
+@keyframes breathing{
+
+    50%{
+        opacity:.3;
+    }
+
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+#experience{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:
+        25px
+        25px
+        75px;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:
+        opacity .8s ease;
+
+}
+
+
+#experience.show{
+
+    opacity:1;
+
+    pointer-events:auto;
+
+}
+
+
+/* =========================================================
+   SCRAPBOOK
+========================================================= */
+
+.book{
+
+    position:relative;
+
+    width:min(1100px,96vw);
+
+    height:min(690px,84vh);
+
+    padding:11px;
+
+    background:#ddb0a5;
+
+    box-shadow:
+        0 35px 90px rgba(20,0,5,.45);
+
+}
+
+
+.book:before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:7px;
+
+    border:
+        1px solid
+        rgba(70,20,20,.18);
+
+    pointer-events:none;
+
+}
+
+
+/* =========================================================
+   SLIDES
+========================================================= */
+
+.slide{
+
+    position:absolute;
+
+    inset:11px;
+
+    padding:
+        40px
+        48px
+        72px;
+
+    background:
+
+        radial-gradient(
+            circle at 15% 10%,
+            rgba(190,120,80,.05),
+            transparent 25%
+        ),
+
+        #fffaf3;
+
+    color:var(--ink);
+
+    overflow:hidden;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:
+        translateX(40px)
+        rotate(1deg)
+        scale(.985);
+
+    transition:
+        opacity .55s ease,
+        transform .65s cubic-bezier(.2,.8,.2,1),
+        visibility .55s ease;
+
+}
+
+
+.slide.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:none;
+
+}
+
+
+.slide.active .slide-content{
+
+    animation:
+        pageReveal .8s cubic-bezier(.2,.8,.2,1) both;
+
+}
+
+
+@keyframes pageReveal{
+
+    from{
+        opacity:0;
+        transform:translateY(18px) scale(.985);
+    }
+
+    to{
+        opacity:1;
+        transform:none;
+    }
+
+}
+
+
+.slide:after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    opacity:.18;
+
+    background-image:
+        radial-gradient(
+            rgba(80,30,30,.15) .7px,
+            transparent .7px
+        );
+
+    background-size:13px 13px;
+
+}
+
+
+.slide-content{
+
+    position:relative;
+
+    z-index:2;
+
+    height:100%;
+
+}
+
+
+/* =========================================================
+   DECORATIONS
+========================================================= */
+
+.doodle{
+
+    position:absolute;
+
+    color:var(--red);
+
+    opacity:.6;
+
+    font-size:32px;
+
+    z-index:5;
+
+    animation:
+        doodleFloat 4s ease-in-out infinite;
+
+}
+
+
+.doodle.two{
+    animation-delay:-1.2s;
+}
+
+
+.doodle.three{
+    animation-delay:-2.4s;
+}
+
+
+.doodle.four{
+    animation-delay:-3.1s;
+}
+
+
+@keyframes doodleFloat{
+
+    50%{
+        transform:translateY(-7px) rotate(5deg);
+    }
+
+}
+
+
+.doodle.one{
+    left:22px;
+    top:20px;
+}
+
+.doodle.two{
+    right:25px;
+    top:20px;
+}
+
+.doodle.three{
+    left:25px;
+    bottom:25px;
+}
+
+.doodle.four{
+    right:25px;
+    bottom:25px;
+}
+
+
+.tiny-label{
+
+    font-family:'DM Sans',sans-serif;
+
+    font-size:9px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    color:var(--muted);
+
+}
+
+
+/* =========================================================
+   PAGE 1
+========================================================= */
+
+.cover{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+
+.cover-inner{
+
+    max-width:800px;
+
+}
+
+
+.cover-title{
+
+    font-family:'Parisienne',cursive;
+
+    color:var(--red);
+
+    font-size:
+        clamp(70px,10vw,120px);
+
+    line-height:.78;
+
+    margin:
+        25px 0 18px;
+
+}
+
+
+.cover-description{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:20px;
+
+    font-style:italic;
+
+    color:var(--muted);
+
+}
+
+
+.cover-line{
+
+    display:inline-block;
+
+    margin-top:38px;
+
+    padding:
+        9px 20px;
+
+    border-top:
+        1px solid #d9bbb1;
+
+    border-bottom:
+        1px solid #d9bbb1;
+
+    color:var(--muted);
+
+    font-family:'DM Sans',sans-serif;
+
+    font-size:10px;
+
+    letter-spacing:2px;
+
+}
+
+
+.cover-heart{
+
+    margin-top:25px;
+
+    font-size:40px;
+
+    color:var(--red);
+
+    animation:
+        heartbeat 1.8s infinite;
+
+}
+
+
+@keyframes heartbeat{
+
+    50%{
+        transform:scale(1.13);
+    }
+
+}
+
+
+/* =========================================================
+   PAGE 2
+========================================================= */
+
+.two-column{
+
+    display:grid;
+
+    grid-template-columns:
+        .9fr
+        1.1fr;
+
+    gap:50px;
+
+    height:100%;
+
+    align-items:center;
+
+}
+
+
+/* =========================================================
+   PHOTO FRAME
+========================================================= */
+
+.photo-frame{
+
+    width:320px;
+
+    background:white;
+
+    padding:
+        12px
+        12px
+        45px;
+
+    box-shadow:
+        0 15px 30px rgba(40,15,20,.18);
+
+    transform:rotate(-5deg);
+
+    position:relative;
+
+    margin:auto;
+
+}
+
+
+.photo{
+
+    width:100%;
+
+    height:350px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e8959e,
+            #8d2335
+        );
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    overflow:hidden;
+
+    color:white;
+
+    font-size:55px;
+
+}
+
+
+.photo img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+
+.photo-caption{
+
+    position:absolute;
+
+    bottom:8px;
+
+    left:0;
+
+    right:0;
+
+    text-align:center;
+
+    color:var(--red);
+
+    font-family:'Parisienne',cursive;
+
+    font-size:27px;
+
+}
+
+
+/* camera button ONLY ON PHOTO */
+
+.photo-upload{
+
+    position:absolute;
+
+    right:10px;
+
+    bottom:9px;
+
+    width:28px;
+
+    height:28px;
+
+    border-radius:50%;
+
+    background:
+        rgba(158,31,53,.9);
+
+    color:white;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    cursor:pointer;
+
+    font-size:13px;
+
+    z-index:10;
+
+    box-shadow:
+        0 3px 7px rgba(0,0,0,.2);
+
+}
+
+
+.photo-upload input{
+
+    display:none;
+
+}
+
+
+.tape{
+
+    position:absolute;
+
+    width:110px;
+
+    height:25px;
+
+    background:
+        rgba(224,176,155,.62);
+
+    z-index:15;
+
+}
+
+
+.tape-top{
+
+    top:-11px;
+
+    left:100px;
+
+    transform:rotate(-3deg);
+
+}
+
+
+.message-card{
+
+    background:#fffdf8;
+
+    padding:
+        35px;
+
+    box-shadow:
+        0 12px 25px rgba(50,20,20,.13);
+
+    transform:rotate(2deg);
+
+    position:relative;
+
+}
+
+
+.message-card:before{
+
+    content:"";
+
+    position:absolute;
+
+    width:105px;
+
+    height:22px;
+
+    background:
+        rgba(225,178,157,.6);
+
+    top:-10px;
+
+    left:40%;
+
+    transform:rotate(-2deg);
+
+}
+
+
+.message-card h2{
+
+    font-family:'Parisienne',cursive;
+
+    font-size:44px;
+
+    font-weight:400;
+
+    color:var(--red);
+
+    margin:
+        8px 0 20px;
+
+}
+
+
+.message-card p{
+
+    font-size:18px;
+
+    line-height:1.6;
+
+    margin:
+        0 0 15px;
+
+}
+
+
+.signature{
+
+    font-family:'Parisienne',cursive;
+
+    color:var(--red);
+
+    font-size:34px;
+
+    text-align:right;
+
+    margin-top:20px;
+
+}
+
+
+/* =========================================================
+   PAGE 3 — COLLAGE
+========================================================= */
+
+.center-heading{
+
+    text-align:center;
+
+    margin-bottom:15px;
+
+}
+
+
+.section-title{
+
+    font-family:'Parisienne',cursive;
+
+    font-size:58px;
+
+    color:var(--red);
+
+    line-height:.9;
+
+    margin:8px 0;
+
+}
+
+
+.section-subtitle{
+
+    color:var(--muted);
+
+    font-style:italic;
+
+    font-size:16px;
+
+}
+
+
+.collage{
+
+    position:relative;
+
+    width:min(900px,100%);
+
+    height:485px;
+
+    margin:auto;
+
+}
+
+
+.small-photo{
+
+    position:absolute;
+
+    width:205px;
+
+    background:white;
+
+    padding:
+        9px
+        9px
+        38px;
+
+    box-shadow:
+        0 10px 22px rgba(40,15,20,.18);
+
+    cursor:pointer;
+
+    transition:
+        transform .35s ease;
+
+}
+
+
+.small-photo:hover{
+
+    transform:
+        rotate(0deg)
+        scale(1.06);
+
+    z-index:30;
+
+}
+
+
+.small-photo .photo{
+
+    height:205px;
+
+    font-size:38px;
+
+}
+
+
+.small-caption{
+
+    position:absolute;
+
+    bottom:6px;
+
+    left:0;
+
+    right:0;
+
+    text-align:center;
+
+    color:var(--red);
+
+    font-family:'Parisienne',cursive;
+
+    font-size:21px;
+
+}
+
+
+.small-upload{
+
+    position:absolute;
+
+    right:8px;
+
+    bottom:7px;
+
+    width:25px;
+
+    height:25px;
+
+    background:var(--red);
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    z-index:20;
+
+    font-size:11px;
+
+}
+
+
+.small-upload input{
+
+    display:none;
+
+}
+
+
+.photo1{
+
+    left:3%;
+
+    top:20px;
+
+    transform:rotate(-7deg);
+
+}
+
+
+.photo2{
+
+    left:31%;
+
+    top:65px;
+
+    transform:rotate(3deg);
+
+    z-index:5;
+
+}
+
+
+.photo3{
+
+    right:3%;
+
+    top:18px;
+
+    transform:rotate(8deg);
+
+}
+
+
+.photo4{
+
+    left:15%;
+
+    bottom:0;
+
+    transform:rotate(6deg);
+
+}
+
+
+.photo5{
+
+    right:14%;
+
+    bottom:0;
+
+    transform:rotate(-5deg);
+
+}
+
+
+/* =========================================================
+   PAGE 4
+========================================================= */
+
+.love-page{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+
+.love-title{
+
+    font-family:'Parisienne',cursive;
+
+    color:var(--red);
+
+    font-size:58px;
+
+    margin:5px 0;
+
+}
+
+
+.love-intro{
+
+    color:var(--muted);
+
+    font-style:italic;
+
+    margin-bottom:25px;
+
+}
+
+
+.love-grid{
+
+    width:min(850px,100%);
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:13px;
+
+}
+
+
+.love-box{
+
+    background:#fffdf8;
+
+    min-height:100px;
+
+    padding:16px 20px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    box-shadow:
+        0 6px 14px rgba(60,25,25,.1);
+
+    transform:rotate(-.7deg);
+
+}
+
+
+.love-box:nth-child(even){
+
+    transform:rotate(.7deg);
+
+}
+
+
+.love-number{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    background:var(--pink-light);
+
+    color:var(--red);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-shrink:0;
+
+    font-family:'Parisienne',cursive;
+
+    font-size:22px;
+
+}
+
+
+.love-box strong{
+
+    display:block;
+
+    color:var(--red);
+
+    font-size:19px;
+
+}
+
+
+.love-box span{
+
+    color:var(--muted);
+
+    font-size:14px;
+
+}
+
+
+/* =========================================================
+   PAGE 5 — TIMELINE
+========================================================= */
+
+.timeline{
+
+    max-width:780px;
+
+    margin:15px auto;
+
+    position:relative;
+
+}
+
+
+.timeline:before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    top:0;
+
+    bottom:0;
+
+    width:1px;
+
+    background:#d8b7ae;
+
+}
+
+
+.timeline-item{
+
+    width:50%;
+
+    position:relative;
+
+    padding:
+        0 35px 24px;
+
+}
+
+
+.timeline-item:nth-child(even){
+
+    margin-left:50%;
+
+}
+
+
+.timeline-item:nth-child(odd){
+
+    text-align:right;
+
+}
+
+
+.timeline-dot{
+
+    width:13px;
+
+    height:13px;
+
+    border-radius:50%;
+
+    background:var(--red);
+
+    border:
+        3px solid
+        var(--paper);
+
+    position:absolute;
+
+    top:3px;
+
+}
+
+
+.timeline-item:nth-child(odd)
+.timeline-dot{
+
+    right:-7px;
+
+}
+
+
+.timeline-item:nth-child(even)
+.timeline-dot{
+
+    left:-7px;
+
+}
+
+
+.timeline-month{
+
+    font-family:'DM Sans',sans-serif;
+
+    font-size:9px;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    color:var(--red);
+
+}
+
+
+.timeline-item h3{
+
+    font-family:'Parisienne',cursive;
+
+    color:var(--red);
+
+    font-size:31px;
+
+    margin:
+        3px 0;
+
+    font-weight:400;
+
+}
+
+
+.timeline-item p{
+
+    color:var(--muted);
+
+    font-size:15px;
+
+    line-height:1.45;
+
+    margin:0;
+
+}
+
+
+/* =========================================================
+   PAGE 6 — MUSIC
+========================================================= */
+
+.music-page{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+
+.music-title{
+
+    font-family:'Parisienne',cursive;
+
+    color:var(--red);
+
+    font-size:59px;
+
+    margin:0;
+
+}
+
+
+.music-subtitle{
+
+    color:var(--muted);
+
+    font-style:italic;
+
+    margin-top:6px;
+
+}
+
+
+.record{
+
+    width:230px;
+
+    height:230px;
+
+    border-radius:50%;
+
+    margin:
+        28px 0;
+
+    position:relative;
+
+    background:
+        repeating-radial-gradient(
+            circle,
+            #111 0px,
+            #111 2px,
+            #292929 3px,
+            #101010 5px
+        );
+
+    box-shadow:
+        15px 20px 30px rgba(30,10,10,.3);
+
+    animation:
+        recordSpin 7s linear infinite;
+
+    animation-play-state:paused;
+
+}
+
+
+.record.playing{
+
+    animation-play-state:running;
+
+}
+
+
+.record-label{
+
+    position:absolute;
+
+    width:82px;
+
+    height:82px;
+
+    border-radius:50%;
+
+    left:50%;
+
+    top:50%;
+
+    transform:
+        translate(-50%,-50%);
+
+    background:#b93e54;
+
+    border:
+        4px solid #df7d88;
+
+}
+
+
+.record-hole{
+
+    position:absolute;
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    left:50%;
+
+    top:50%;
+
+    transform:
+        translate(-50%,-50%);
+
+    background:white;
+
+    z-index:3;
+
+}
+
+
+@keyframes recordSpin{
+
+    to{
+        transform:rotate(360deg);
+    }
+
+}
+
+
+.song-name{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:21px;
+
+}
+
+
+.song-note{
+
+    color:var(--muted);
+
+    font-size:16px;
+
+    margin-top:4px;
+
+}
+
+
+.music-controls{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:9px;
+
+    margin-top:18px;
+
+}
+
+
+.music-button{
+
+    border:none;
+
+    background:var(--red);
+
+    color:white;
+
+    border-radius:25px;
+
+    padding:
+        10px 18px;
+
+    cursor:pointer;
+
+    font-family:'DM Sans',sans-serif;
+
+    font-size:10px;
+
+    letter-spacing:1px;
+
+}
+
+
+.music-button:hover{
+
+    background:var(--red-dark);
+
+}
+
+
+.music-upload{
+
+    border:
+        1px solid
+        #d7b7ae;
+
+    background:#fffaf3;
+
+    color:var(--red);
+
+    border-radius:25px;
+
+    padding:
+        9px 15px;
+
+    cursor:pointer;
+
+    font-family:'DM Sans',sans-serif;
+
+    font-size:10px;
+
+}
+
+
+.music-upload input{
+
+    display:none;
+
+}
+
+
+.volume{
+
+    width:75px;
+
+}
+
+
+/* =========================================================
+   PAGE 7 — LETTER
+========================================================= */
+
+.letter-container{
+
+    height:100%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+.letter-paper{
+
+    width:min(700px,100%);
+
+    max-height:100%;
+
+    overflow:auto;
+
+    background:#fffdf8;
+
+    padding:
+        32px 42px;
+
+    box-shadow:
+        0 15px 35px rgba(40,15,20,.14);
+
+    position:relative;
+
+}
+
+
+.letter-paper:before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-10px;
+
+    left:42%;
+
+    width:120px;
+
+    height:24px;
+
+    background:
+        rgba(224,177,158,.6);
+
+    transform:rotate(-2deg);
+
+}
+
+
+.letter-paper h2{
+
+    font-family:'Parisienne',cursive;
+
+    color:var(--red);
+
+    font-size:45px;
+
+    margin:
+        7px 0 18px;
+
+}
+
+
+.letter-paper p{
+
+    font-size:18px;
+
+    line-height:1.7;
+
+    margin:
+        0 0 14px;
+
+}
+
+
+.letter-ending{
+
+    text-align:right;
+
+    font-family:'Parisienne',cursive;
+
+    font-size:34px;
+
+    color:var(--red);
+
+    margin-top:20px;
+
+}
+
+
+/* =========================================================
+   PAGE 8
+========================================================= */
+
+.final{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+
+.final-inner{
+
+    max-width:800px;
+
+}
+
+
+.final-title{
+
+    font-family:'Parisienne',cursive;
+
+    color:var(--red);
+
+    font-size:
+        clamp(70px,10vw,120px);
+
+    line-height:.8;
+
+    margin:
+        22px 0;
+
+}
+
+
+.final-text{
+
+    color:var(--muted);
+
+    font-size:20px;
+
+    font-style:italic;
+
+    line-height:1.65;
+
+}
+
+
+.final-hearts{
+
+    color:var(--red);
+
+    font-size:30px;
+
+    letter-spacing:10px;
+
+    margin-top:25px;
+
+}
+
+
+.final-name{
+
+    font-family:'Parisienne',cursive;
+
+    color:var(--red);
+
+    font-size:43px;
+
+    margin-top:25px;
+
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.navigation{
+
+    position:fixed;
+
+    left:50%;
+
+    bottom:15px;
+
+    transform:
+        translateX(-50%);
+
+    z-index:500;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:.5s;
+
+}
+
+
+.navigation.show{
+
+    opacity:1;
+
+    pointer-events:auto;
+
+}
+
+
+.nav-button{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    border:
+        1px solid
+        rgba(255,255,255,.3);
+
+    background:
+        rgba(95,10,25,.75);
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+}
+
+
+.nav-button:hover{
+
+    background:#641020;
+
+}
+
+
+.progress{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+}
+
+
+.progress-dot{
+
+    width:6px;
+
+    height:6px;
+
+    border-radius:10px;
+
+    background:
+        rgba(255,255,255,.4);
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.progress-dot.active{
+
+    width:20px;
+
+    background:white;
+
+}
+
+
+/* =========================================================
+   FLOATING HEARTS
+========================================================= */
+
+.heart{
+
+    position:fixed;
+
+    bottom:-30px;
+
+    pointer-events:none;
+
+    z-index:99999;
+
+    color:
+        rgba(255,220,225,.75);
+
+    animation:
+        floatHeart
+        var(--time)
+        linear forwards;
+
+}
+
+
+@keyframes floatHeart{
+
+    0%{
+
+        transform:
+            translateY(0)
+            translateX(0)
+            scale(.5);
+
+        opacity:0;
+
+    }
+
+    15%{
+
+        opacity:.8;
+
+    }
+
+    100%{
+
+        transform:
+            translateY(-110vh)
+            translateX(var(--drift))
+            scale(1.25)
+            rotate(30deg);
+
+        opacity:0;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:800px){
+
+    body{
+        overflow:auto;
+    }
+
+    #experience{
+
+        position:relative;
+
+        min-height:100vh;
+
+        height:auto;
+
+        padding:
+            15px
+            8px
+            70px;
+
+    }
+
+    .book{
+
+        width:97vw;
+
+        height:720px;
+
+    }
+
+    .slide{
+
+        padding:
+            28px
+            20px
+            65px;
+
+    }
+
+    .two-column{
+
+        grid-template-columns:1fr;
+
+        gap:10px;
+
+    }
+
+    .photo-frame{
+
+        width:205px;
+
+        padding-bottom:35px;
+
+    }
+
+    .photo-frame .photo{
+
+        height:215px;
+
+    }
+
+    .message-card{
+
+        padding:22px;
+
+    }
+
+    .message-card h2{
+
+        font-size:34px;
+
+    }
+
+    .message-card p{
+
+        font-size:14px;
+
+    }
+
+    .collage{
+
+        transform:scale(.78);
+
+        transform-origin:
+            top center;
+
+        width:125%;
+
+        margin-left:-12%;
+
+    }
+
+    .love-grid{
+
+        grid-template-columns:1fr;
+
+        gap:8px;
+
+    }
+
+    .love-box{
+
+        min-height:72px;
+
+    }
+
+    .love-box strong{
+
+        font-size:16px;
+
+    }
+
+    .love-box span{
+
+        font-size:12px;
+
+    }
+
+    .timeline:before{
+
+        left:17px;
+
+    }
+
+    .timeline-item,
+    .timeline-item:nth-child(even){
+
+        width:100%;
+
+        margin-left:0;
+
+        text-align:left;
+
+        padding:
+            0
+            10px
+            23px
+            42px;
+
+    }
+
+    .timeline-item:nth-child(odd)
+    .timeline-dot,
+    .timeline-item:nth-child(even)
+    .timeline-dot{
+
+        left:11px;
+
+        right:auto;
+
+    }
+
+    .letter-paper{
+
+        padding:
+            25px;
+
+    }
+
+    .letter-paper p{
+
+        font-size:15px;
+
+    }
+
+}
+
+
+@media(max-width:500px){
+
+    .intro-title{
+
+        font-size:68px;
+
+    }
+
+    .intro-subtitle{
+
+        font-size:17px;
+
+    }
+
+    .envelope-container{
+
+        transform:scale(.82);
+
+        margin-top:30px;
+
+    }
+
+    .book{
+
+        height:700px;
+
+    }
+
+    .section-title,
+    .love-title{
+
+        font-size:45px;
+
+    }
+
+    .collage{
+
+        transform:scale(.67);
+
+        width:145%;
+
+        margin-left:-22%;
+
+    }
+
+    .music-title{
+
+        font-size:45px;
+
+    }
+
+    .record{
+
+        width:185px;
+
+        height:185px;
+
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media(prefers-reduced-motion:reduce){
+
+    *,
+    *:before,
+    *:after{
+
+        animation-duration:.01ms !important;
+
+        animation-iteration-count:1 !important;
+
+        transition-duration:.01ms !important;
+
+    }
+
+}
+
+
+/* =========================================================
+   EXTRA PAGES
+========================================================= */
+
+.memory-grid{
+    width:min(900px,100%);
+    margin:18px auto 0;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.memory-card{
+    background:#fffdf8;
+    padding:22px 18px;
+    min-height:150px;
+    box-shadow:0 9px 20px rgba(50,20,20,.11);
+    position:relative;
+    transform:rotate(-1deg);
+}
+
+.memory-card:nth-child(2){transform:rotate(1.2deg);}
+.memory-card:nth-child(3){transform:rotate(-.6deg);}
+.memory-card:nth-child(4){transform:rotate(1deg);}
+.memory-card:nth-child(5){transform:rotate(-1.3deg);}
+.memory-card:nth-child(6){transform:rotate(.7deg);}
+
+.memory-icon{
+    font-size:29px;
+    color:var(--red);
+    margin-bottom:9px;
+}
+
+.memory-card h3{
+    margin:0 0 7px;
+    color:var(--red);
+    font-family:'Parisienne',cursive;
+    font-size:29px;
+    font-weight:400;
+}
+
+.memory-card p{
+    margin:0;
+    color:var(--muted);
+    font-size:14px;
+    line-height:1.5;
+}
+
+.memory-card:before{
+    content:"";
+    position:absolute;
+    width:55px;
+    height:15px;
+    background:rgba(224,176,155,.45);
+    top:-7px;
+    left:50%;
+    transform:translateX(-50%) rotate(-2deg);
+}
+
+.bucket-grid{
+    width:min(820px,100%);
+    margin:18px auto 0;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+}
+
+.bucket-item{
+    background:#fffdf8;
+    padding:15px 18px;
+    box-shadow:0 7px 15px rgba(50,20,20,.09);
+    display:flex;
+    align-items:center;
+    gap:13px;
+    color:var(--muted);
+    font-size:15px;
+    line-height:1.35;
+}
+
+.bucket-item:nth-child(odd){transform:rotate(-.6deg);}
+.bucket-item:nth-child(even){transform:rotate(.6deg);}
+
+.bucket-heart{
+    width:35px;
+    height:35px;
+    flex:0 0 35px;
+    border-radius:50%;
+    background:var(--pink-light);
+    color:var(--red);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:17px;
+}
+
+.promise-wrap{
+    width:min(760px,100%);
+    margin:15px auto 0;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:13px;
+}
+
+.promise{
+    background:#fffdf8;
+    padding:18px 20px;
+    box-shadow:0 7px 16px rgba(50,20,20,.1);
+    border-left:3px solid var(--pink);
+    color:var(--muted);
+    font-size:15px;
+    line-height:1.5;
+}
+
+.promise strong{
+    display:block;
+    color:var(--red);
+    font-family:'Playfair Display',serif;
+    font-size:17px;
+    margin-bottom:4px;
+}
+
+.open-grid{
+    width:min(800px,100%);
+    margin:20px auto 0;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.open-card{
+    min-height:120px;
+    padding:20px;
+    background:#fffdf8;
+    box-shadow:0 8px 18px rgba(50,20,20,.1);
+    position:relative;
+    overflow:hidden;
+}
+
+.open-card:after{
+    content:"♡";
+    position:absolute;
+    right:-8px;
+    bottom:-18px;
+    font-family:'Parisienne',cursive;
+    font-size:95px;
+    color:rgba(158,31,53,.07);
+}
+
+.open-card h3{
+    margin:0 0 6px;
+    color:var(--red);
+    font-family:'Parisienne',cursive;
+    font-size:30px;
+    font-weight:400;
+}
+
+.open-card p{
+    margin:0;
+    color:var(--muted);
+    font-size:14px;
+    line-height:1.45;
+}
+
+.page-stamp{
+    display:inline-block;
+    margin-top:16px;
+    padding:7px 13px;
+    border:1px dashed #d4ada3;
+    color:var(--muted);
+    font-family:'DM Sans',sans-serif;
+    font-size:9px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    transform:rotate(-2deg);
+}
+
+@media(max-width:800px){
+    .memory-grid{
+        grid-template-columns:1fr 1fr;
+        gap:10px;
+    }
+
+    .memory-card{
+        min-height:125px;
+        padding:15px;
+    }
+
+    .memory-card h3{font-size:24px;}
+    .memory-card p{font-size:12px;}
+
+    .bucket-grid,
+    .promise-wrap,
+    .open-grid{
+        grid-template-columns:1fr;
+        gap:9px;
+    }
+
+    .bucket-item{
+        padding:11px 13px;
+        font-size:13px;
+    }
+
+    .promise{
+        padding:13px 15px;
+        font-size:13px;
+    }
+
+    .open-card{
+        min-height:100px;
+        padding:15px;
+    }
+}
+
+@media(max-width:500px){
+    .memory-grid{
+        transform:scale(.9);
+        transform-origin:top center;
+        width:111%;
+        margin-left:-5.5%;
+        gap:7px;
+    }
+
+    .memory-card{
+        min-height:112px;
+        padding:11px;
+    }
+
+    .memory-icon{font-size:22px;}
+    .memory-card h3{font-size:21px;}
+    .memory-card p{font-size:10px;}
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =======================================================
+     OPENING
+======================================================= -->
+
+<div id="intro">
+
+    <div class="intro-inner">
+
+        <div class="intro-eyebrow">
+            A little something for you
+        </div>
+
+        <h1 class="intro-title">
+            Happy 3 Months
+        </h1>
+
+        <div class="intro-subtitle">
+            for my favorite person, Keo Soksetha ♡
+        </div>
+
+
+        <!-- ENVELOPE -->
+
+        <div class="envelope-container">
+
+            <div
+                class="envelope"
+                id="envelope"
+                onclick="openEnvelope()"
+            >
+
+                <!-- Letter -->
+                <div class="envelope-letter">
+
+                    For Soksetha...
+
+                    <br>
+
+                    <span style="font-size:18px">
+                        open my heart ♡
+                    </span>
+
+                </div>
+
+
+                <!-- Envelope -->
+                <div class="envelope-back"></div>
+
+
+                <!-- Flap -->
+                <div class="envelope-flap"></div>
+
+
+                <!-- Seal -->
+                <div class="seal">
+                    ♥
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="tap-text">
+            tap the envelope
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =======================================================
+     EXPERIENCE
+======================================================= -->
+
+<main id="experience">
+
+
+<div class="book">
+
+
+<!-- =====================================================
+     PAGE 1
+====================================================== -->
+
+<section class="slide active cover">
+
+    <div class="doodle one">♡</div>
+    <div class="doodle two">✦</div>
+    <div class="doodle three">♡</div>
+    <div class="doodle four">✦</div>
+
+
+    <div class="slide-content cover-inner">
+
+        <div class="tiny-label">
+            our little love story
+        </div>
+
+        <h1 class="cover-title">
+            Three Months
+        </h1>
+
+        <div class="cover-description">
+
+            A tiny scrapbook about you,
+            me, and all the little moments
+            I never want to forget.
+
+        </div>
+
+        <div class="cover-line">
+
+            THREE MONTHS · ONE LOVE · SO MANY MEMORIES
+
+        </div>
+
+        <div class="cover-heart">
+            ♥
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+    PAGE 3
+====================================================== -->
+
+<section class="slide">
+
+    <div class="slide-content two-column">
+
+
+        <!-- PHOTO -->
+
+        <div class="photo-frame">
+
+            <div class="tape tape-top"></div>
+
+            <div class="photo" id="mainPhoto">
+                <img src="photos/photo6.jpg" alt="A favorite memory">
+            </div>
+
+            <div class="photo-caption">
+                my favorite person
+            </div>
+
+
+            <!-- ONLY PHOTO UPLOAD BUTTON -->
+
+            <label class="photo-upload">
+
+                📷
+
+                <input
+                    type="file"
+                    accept="image/*"
+                    onchange="loadPhoto(this,'mainPhoto')"
+                >
+
+            </label>
+
+        </div>
+
+
+        <!-- MESSAGE -->
+
+        <div class="message-card">
+
+            <div class="tiny-label">
+                page 03 · a little note
+            </div>
+
+            <h2>
+                Happy Monthsary,
+                My Love ♡
+            </h2>
+
+            <p>
+                Three months might sound like a small
+                amount of time, but somehow you've
+                become such a big part of my life.
+            </p>
+
+            <p>
+                I love how the smallest things remind
+                me of you. A song, a random thought,
+                a silly joke, or just a moment where
+                I suddenly catch myself smiling.
+            </p>
+
+            <p>
+                And then I realize the reason is you.
+            </p>
+
+            <div class="signature">
+                yours, always
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 3
+====================================================== -->
+
+<section class="slide">
+
+    <div class="slide-content">
+
+
+        <div class="center-heading">
+
+            <div class="tiny-label">
+                little snapshots
+            </div>
+
+            <h2 class="section-title">
+                My Favorite Memories
+            </h2>
+
+            <div class="section-subtitle">
+                some of my favorite moments have you in them.
+            </div>
+
+        </div>
+
+
+        <div class="collage">
+
+
+            <!-- PHOTO 1 -->
+
+            <div class="small-photo photo1">
+
+                <div
+                    class="photo"
+                    id="photo1"
+                >
+                    <img src="photos/photo1.jpg" alt="You and me">
+                </div>
+
+                <div class="small-caption">
+                    you & me
+                </div>
+
+                <label class="small-upload">
+
+                    +
+
+                    <input
+                        type="file"
+                        accept="image/*"
+                        onchange="loadPhoto(this,'photo1')"
+                    >
+
+                </label>
+
+            </div>
+
+
+            <!-- PHOTO 2 -->
+
+            <div class="small-photo photo2">
+
+                <div
+                    class="photo"
+                    id="photo2"
+                >
+                    <img src="photos/photo2.jpg" alt="My happy place">
+                </div>
+
+                <div class="small-caption">
+                    my happy place
+                </div>
+
+                <label class="small-upload">
+
+                    +
+
+                    <input
+                        type="file"
+                        accept="image/*"
+                        onchange="loadPhoto(this,'photo2')"
+                    >
+
+                </label>
+
+            </div>
+
+
+            <!-- PHOTO 3 -->
+
+            <div class="small-photo photo3">
+
+                <div
+                    class="photo"
+                    id="photo3"
+                >
+                    <img src="photos/photo3.jpg" alt="Just us">
+                </div>
+
+                <div class="small-caption">
+                    just us
+                </div>
+
+                <label class="small-upload">
+
+                    +
+
+                    <input
+                        type="file"
+                        accept="image/*"
+                        onchange="loadPhoto(this,'photo3')"
+                    >
+
+                </label>
+
+            </div>
+
+
+            <!-- PHOTO 4 -->
+
+            <div class="small-photo photo4">
+
+                <div
+                    class="photo"
+                    id="photo4"
+                >
+                    <img src="photos/photo4.jpg" alt="Little moments">
+                </div>
+
+                <div class="small-caption">
+                    little moments
+                </div>
+
+                <label class="small-upload">
+
+                    +
+
+                    <input
+                        type="file"
+                        accept="image/*"
+                        onchange="loadPhoto(this,'photo4')"
+                    >
+
+                </label>
+
+            </div>
+
+
+            <!-- PHOTO 5 -->
+
+            <div class="small-photo photo5">
+
+                <div
+                    class="photo"
+                    id="photo5"
+                >
+                    <img src="photos/photo5.jpg" alt="Always us">
+                </div>
+
+                <div class="small-caption">
+                    always us
+                </div>
+
+                <label class="small-upload">
+
+                    +
+
+                    <input
+                        type="file"
+                        accept="image/*"
+                        onchange="loadPhoto(this,'photo5')"
+                    >
+
+                </label>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 4
+====================================================== -->
+
+<section class="slide">
+
+    <div class="slide-content love-page">
+
+        <div class="tiny-label">
+            things I could never stop listing
+        </div>
+
+        <h2 class="love-title">
+            Things I Love About You
+        </h2>
+
+        <div class="love-intro">
+            It's not just one thing. It's everything.
+        </div>
+
+
+        <div class="love-grid">
+
+
+            <div class="love-box">
+
+                <div class="love-number">
+                    01
+                </div>
+
+                <div>
+
+                    <strong>
+                        Your kindness
+                    </strong>
+
+                    <span>
+                        You have such a beautiful way of caring.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="love-box">
+
+                <div class="love-number">
+                    02
+                </div>
+
+                <div>
+
+                    <strong>
+                        Your laugh
+                    </strong>
+
+                    <span>
+                        Especially the laugh you try to hide.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="love-box">
+
+                <div class="love-number">
+                    03
+                </div>
+
+                <div>
+
+                    <strong>
+                        Your smile
+                    </strong>
+
+                    <span>
+                        Somehow it always makes my day better.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="love-box">
+
+                <div class="love-number">
+                    04
+                </div>
+
+                <div>
+
+                    <strong>
+                        Your heart
+                    </strong>
+
+                    <span>
+                        Soft, caring, and completely you.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="love-box">
+
+                <div class="love-number">
+                    05
+                </div>
+
+                <div>
+
+                    <strong>
+                        The way you care for me
+                    </strong>
+
+                    <span>
+                        I notice even the little things.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="love-box">
+
+                <div class="love-number">
+                    06
+                </div>
+
+                <div>
+
+                    <strong>
+                        Simply being you
+                    </strong>
+
+                    <span>
+                        You never have to pretend around me.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 5
+====================================================== -->
+
+<section class="slide">
+
+    <div class="slide-content">
+
+        <div class="center-heading">
+
+            <div class="tiny-label">
+                our little timeline
+            </div>
+
+            <h2 class="section-title">
+                How We Got Here
+            </h2>
+
+        </div>
+
+
+        <div class="timeline">
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-month">
+                    month one
+                </div>
+
+                <h3>
+                    The Beginning
+                </h3>
+
+                <p>
+                    The month where everything was new,
+                    exciting, and just a little bit scary.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-month">
+                    month two
+                </div>
+
+                <h3>
+                    Getting Closer
+                </h3>
+
+                <p>
+                    More conversations, more laughs,
+                    and slowly learning all the little
+                    things that make you, you.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-month">
+                    month three
+                </div>
+
+                <h3>
+                    Still Choosing You
+                </h3>
+
+                <p>
+                    And somehow, after three months,
+                    I still get that same little feeling
+                    whenever I think about you.
+                </p>
+
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-month">
+                    next chapter
+                </div>
+
+                <h3>
+                    More Of Us
+                </h3>
+
+                <p>
+                    More memories. More adventures.
+                    More ordinary days that become
+                    special because you're there.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+    PAGE 2 — MUSIC
+====================================================== -->
+
+<section class="slide">
+
+    <div class="slide-content music-page">
+
+        <div class="tiny-label">
+            our soundtrack
+        </div>
+
+        <h2 class="music-title">
+            This One Feels Like You
+        </h2>
+
+        <div class="music-subtitle">
+            because every love story deserves a song.
+        </div>
+
+
+        <!-- RECORD -->
+
+        <div
+            class="record"
+            id="record"
+        >
+
+            <div class="record-label"></div>
+
+            <div class="record-hole"></div>
+
+        </div>
+
+
+        <div class="song-name" id="songName">
+            ♫ Our Song ♫
+        </div>
+
+        <div class="song-note">
+            choose a song that reminds you of her.
+        </div>
+
+
+        <!-- MUSIC CONTROLS -->
+
+        <div class="music-controls">
+
+            <button
+                class="music-button"
+                onclick="toggleMusic()"
+                id="playButton"
+            >
+                ▶ PLAY
+            </button>
+
+
+            <label class="music-upload">
+
+                ♫ ADD SONG
+
+                <input
+                    type="file"
+                    accept="audio/*"
+                    onchange="loadMusic(this)"
+                >
+
+            </label>
+
+
+            <input
+                class="volume"
+                type="range"
+                min="0"
+                max="1"
+                step=".01"
+                value=".8"
+                oninput="changeVolume(this.value)"
+            >
+
+        </div>
+
+
+        <!-- hidden audio -->
+
+        <audio
+            id="audio"
+            src="music/song.mp3"
+            preload="metadata"
+        ></audio>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PAGE 7
+====================================================== -->
+
+<section class="slide">
+
+    <div class="slide-content letter-container">
+
+        <div class="letter-paper">
+
+            <div class="tiny-label">
+                page 07 · from my heart
+            </div>
+
+            <h2>
+                Dear Soksetha,
+            </h2>
+
+            <p>
+                I don't think I say it enough, but I'm really
+                grateful that you came into my life.
+            </p>
+
+            <p>
+                You have made these past three months feel
+                warmer, happier, and a lot more meaningful.
+                I love the little conversations, the stupid
+                jokes, the moments where we don't even need
+                to say much, and all the tiny things that
+                somehow become memories.
+            </p>
+
+            <p>
+                I love knowing that somewhere in this huge
+                world, there is someone who can make me
+                smile just by being themselves.
+            </p>
+
+            <p>
+                I don't want to rush anything.
+                I just want to keep enjoying what we have,
+                keep learning about each other, and keep
+                choosing each other through every new month.
+            </p>
+
+            <p>
+                Thank you for these three months.
+                Thank you for being you.
+            </p>
+
+            <div class="letter-ending">
+                I love you, Soksetha. ♡
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- =====================================================
+     EXTRA PAGE 8 — LITTLE THINGS
+====================================================== -->
+
+<section class="slide">
+
+    <div class="slide-content">
+
+        <div class="center-heading">
+
+            <div class="tiny-label">
+                the little things
+            </div>
+
+            <h2 class="section-title">
+                It's The Small Things
+            </h2>
+
+            <div class="section-subtitle">
+                the tiny moments that somehow mean the most.
+            </div>
+
+        </div>
+
+        <div class="memory-grid">
+
+            <div class="memory-card">
+                <div class="memory-icon">♡</div>
+                <h3>Your Good Morning</h3>
+                <p>Even a simple message from you can completely change my mood.</p>
+            </div>
+
+            <div class="memory-card">
+                <div class="memory-icon">✦</div>
+                <h3>Your Random Messages</h3>
+                <p>The unexpected texts that make me smile when I least expect it.</p>
+            </div>
+
+            <div class="memory-card">
+                <div class="memory-icon">♥</div>
+                <h3>Our Inside Jokes</h3>
+                <p>Things nobody else would understand, but somehow mean everything to us.</p>
+            </div>
+
+            <div class="memory-card">
+                <div class="memory-icon">☾</div>
+                <h3>Late Nights</h3>
+                <p>Those conversations where we forget what time it even is.</p>
+            </div>
+
+            <div class="memory-card">
+                <div class="memory-icon">♡</div>
+                <h3>Your Voice</h3>
+                <p>One of those little comforts I could never get tired of hearing.</p>
+            </div>
+
+            <div class="memory-card">
+                <div class="memory-icon">✿</div>
+                <h3>Just Being Us</h3>
+                <p>No perfect plans needed. Somehow ordinary moments become special.</p>
+            </div>
+
+        </div>
+
+        <div style="text-align:center;">
+            <div class="page-stamp">saved in my heart forever</div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     EXTRA PAGE 9 — FUTURE
+====================================================== -->
+
+<section class="slide">
+
+    <div class="slide-content love-page">
+
+        <div class="tiny-label">
+            someday, together
+        </div>
+
+        <h2 class="love-title">
+            Things I Want To Do With You
+        </h2>
+
+        <div class="love-intro">
+            little plans, big dreams, and everything in between.
+        </div>
+
+        <div class="bucket-grid">
+
+            <div class="bucket-item">
+                <div class="bucket-heart">♥</div>
+                <span>Watch the sunset somewhere beautiful together.</span>
+            </div>
+
+            <div class="bucket-item">
+                <div class="bucket-heart">♡</div>
+                <span>Take a random trip with no complicated plan.</span>
+            </div>
+
+            <div class="bucket-item">
+                <div class="bucket-heart">✦</div>
+                <span>Take way too many photos on an ordinary day.</span>
+            </div>
+
+            <div class="bucket-item">
+                <div class="bucket-heart">♥</div>
+                <span>Try new food and argue about which one is better.</span>
+            </div>
+
+            <div class="bucket-item">
+                <div class="bucket-heart">☾</div>
+                <span>Have another late-night conversation that lasts forever.</span>
+            </div>
+
+            <div class="bucket-item">
+                <div class="bucket-heart">♡</div>
+                <span>Keep making little memories we can look back on.</span>
+            </div>
+
+            <div class="bucket-item">
+                <div class="bucket-heart">✿</div>
+                <span>Celebrate more months, birthdays, and random little wins.</span>
+            </div>
+
+            <div class="bucket-item">
+                <div class="bucket-heart">♥</div>
+                <span>Build a story that is still ours many years from now.</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     EXTRA PAGE 10 — PROMISES
+====================================================== -->
+
+<section class="slide">
+
+    <div class="slide-content love-page">
+
+        <div class="tiny-label">
+            from me to you
+        </div>
+
+        <h2 class="love-title">
+            My Little Promises
+        </h2>
+
+        <div class="love-intro">
+            not perfect promises — just honest ones.
+        </div>
+
+        <div class="promise-wrap">
+
+            <div class="promise">
+                <strong>01 · I'll Listen</strong>
+                I'll always make space for your thoughts, your feelings, and your stories.
+            </div>
+
+            <div class="promise">
+                <strong>02 · I'll Appreciate You</strong>
+                I never want to become so comfortable that I forget how special you are.
+            </div>
+
+            <div class="promise">
+                <strong>03 · I'll Communicate</strong>
+                When things are difficult, I'll choose honest conversations instead of silence.
+            </div>
+
+            <div class="promise">
+                <strong>04 · I'll Support You</strong>
+                I'll cheer for your dreams and be there for the little steps along the way.
+            </div>
+
+            <div class="promise">
+                <strong>05 · I'll Make Memories</strong>
+                I'll keep finding reasons for us to laugh, explore, and enjoy our time together.
+            </div>
+
+            <div class="promise">
+                <strong>06 · I'll Choose Us</strong>
+                Not just on the easy days, but through every new chapter we get to share.
+            </div>
+
+        </div>
+
+        <div style="text-align:center;">
+            <div class="page-stamp">with all my heart ♡</div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     EXTRA PAGE 11 — OPEN WHEN
+====================================================== -->
+
+<section class="slide">
+
+    <div class="slide-content">
+
+        <div class="center-heading">
+
+            <div class="tiny-label">
+                little letters for later
+            </div>
+
+            <h2 class="section-title">
+                Open When...
+            </h2>
+
+            <div class="section-subtitle">
+                a few words for the days when you need them.
+            </div>
+
+        </div>
+
+        <div class="open-grid">
+
+            <div class="open-card">
+                <h3>You Miss Me</h3>
+                <p>Close your eyes for a second and remember: somewhere out there, I'm thinking about you too. ♡</p>
+            </div>
+
+            <div class="open-card">
+                <h3>You Had A Bad Day</h3>
+                <p>One bad day doesn't change how wonderful you are. Be gentle with yourself tonight.</p>
+            </div>
+
+            <div class="open-card">
+                <h3>You Feel Insecure</h3>
+                <p>I hope you see yourself through my eyes for a moment — someone genuinely worth loving.</p>
+            </div>
+
+            <div class="open-card">
+                <h3>You Need A Smile</h3>
+                <p>Remember our silly moments, our random conversations, and all the reasons we laugh together.</p>
+            </div>
+
+            <div class="open-card">
+                <h3>You Feel Alone</h3>
+                <p>You don't have to carry every feeling by yourself. I'm always only a message away.</p>
+            </div>
+
+            <div class="open-card">
+                <h3>You Need A Reminder</h3>
+                <p>Three months is only one chapter. There are still so many beautiful pages waiting for us.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PAGE 8
+====================================================== -->
+
+<section class="slide final">
+
+    <div class="doodle one">♡</div>
+    <div class="doodle two">♡</div>
+
+    <div class="slide-content final-inner">
+
+        <div class="tiny-label">
+            and this is only the beginning
+        </div>
+
+
+        <h1 class="final-title">
+
+            Happy Three Months,
+
+            <br>
+
+            My Love
+
+        </h1>
+
+
+        <div class="final-text">
+
+            Three months down.
+
+            <br>
+
+            Hopefully a whole lot more to go.
+
+            <br><br>
+
+            Here's to every laugh,
+            every late-night conversation,
+            every random adventure,
+            every little argument we laugh about later,
+            and every ordinary day we get to turn
+            into a memory together.
+
+        </div>
+
+
+        <div class="final-hearts">
+            ♥ ♥ ♥
+        </div>
+
+
+        <div class="final-name">
+            Keo Soksetha
+        </div>
+
+
+        <div
+            style="
+                color:#79595d;
+                font-style:italic;
+                margin-top:4px;
+            "
+        >
+            my favorite person, always.
+        </div>
+
+    </div>
+
+</section>
+
+
+</div>
+
+</main>
+
+
+
+<!-- =======================================================
+     NAVIGATION
+======================================================= -->
+
+<div
+    class="navigation"
+    id="navigation"
+>
+
+    <button
+        class="nav-button"
+        onclick="previousSlide()"
+    >
+        ←
+    </button>
+
+
+    <div
+        class="progress"
+        id="progress"
+    ></div>
+
+
+    <button
+        class="nav-button"
+        onclick="nextSlide()"
+    >
+        →
+    </button>
+
+</div>
+
+
+
+<script>
+
+/* =========================================================
+   BASIC VARIABLES
+========================================================= */
+
+const intro =
+    document.getElementById("intro");
+
+const envelope =
+    document.getElementById("envelope");
+
+const experience =
+    document.getElementById("experience");
+
+const navigation =
+    document.getElementById("navigation");
+
+const book =
+    document.querySelector(".book");
+
+const musicSlide =
+    book.querySelector(".music-page")
+        .closest(".slide");
+
+const photoSlide =
+    book.querySelector(".two-column")
+        .closest(".slide");
+
+book.insertBefore(
+    musicSlide,
+    photoSlide
+);
+
+const slides =
+    document.querySelectorAll(".slide");
+
+const progress =
+    document.getElementById("progress");
+
+let currentSlide = 0;
+
+
+/* =========================================================
+   CREATE PROGRESS DOTS
+========================================================= */
+
+slides.forEach((slide,index)=>{
+
+    const dot =
+        document.createElement("div");
+
+    dot.className =
+        "progress-dot";
+
+    dot.onclick = ()=>{
+        goToSlide(index);
+    };
+
+    progress.appendChild(dot);
+
+});
+
+
+/* =========================================================
+   UPDATE SLIDE
+========================================================= */
+
+function updateSlide(){
+
+    slides.forEach(
+        (slide,index)=>{
+
+            slide.classList.toggle(
+                "active",
+                index === currentSlide
+            );
+
+        }
+    );
+
+
+    const dots =
+        document.querySelectorAll(
+            ".progress-dot"
+        );
+
+
+    dots.forEach(
+        (dot,index)=>{
+
+            dot.classList.toggle(
+                "active",
+                index === currentSlide
+            );
+
+        }
+    );
+
+
+}
+
+
+/* =========================================================
+   GO TO SLIDE
+========================================================= */
+
+function goToSlide(index){
+
+    if(index < 0){
+
+        index =
+            slides.length - 1;
+
+    }
+
+    if(index >= slides.length){
+
+        index = 0;
+
+    }
+
+    currentSlide = index;
+
+    updateSlide();
+
+    createHearts(
+        currentSlide === slides.length - 1
+            ? 7
+            : 2
+    );
+
+}
+
+
+/* =========================================================
+   NEXT
+========================================================= */
+
+function nextSlide(){
+
+    goToSlide(
+        currentSlide + 1
+    );
+
+}
+
+
+/* =========================================================
+   PREVIOUS
+========================================================= */
+
+function previousSlide(){
+
+    goToSlide(
+        currentSlide - 1
+    );
+
+}
+
+
+/* =========================================================
+   OPEN ENVELOPE
+========================================================= */
+
+let opening = false;
+
+function openEnvelope(){
+
+    if(opening){
+        return;
+    }
+
+    opening = true;
+
+    envelope.classList.add("open");
+
+    createHearts(12);
+
+
+    setTimeout(()=>{
+
+        intro.classList.add("hide");
+
+        experience.classList.add("show");
+
+        navigation.classList.add("show");
+
+        currentSlide = 0;
+
+        updateSlide();
+
+    },1100);
+
+}
+
+
+/* =========================================================
+   FLOATING HEARTS
+========================================================= */
+
+function createHearts(amount){
+
+    for(
+        let i=0;
+        i<amount;
+        i++
+    ){
+
+        const heart =
+            document.createElement("div");
+
+        heart.className =
+            "heart";
+
+        heart.textContent =
+            ["♥","♡","❤","✦"]
+            [
+                Math.floor(
+                    Math.random()*4
+                )
+            ];
+
+
+        heart.style.left =
+            Math.random()*100
+            + "vw";
+
+
+        heart.style.fontSize =
+            (
+                12 +
+                Math.random()*25
+            )
+            + "px";
+
+
+        heart.style.setProperty(
+            "--time",
+            (
+                4 +
+                Math.random()*4
+            )
+            + "s"
+        );
+
+
+        heart.style.setProperty(
+            "--drift",
+            (
+                -80 +
+                Math.random()*160
+            )
+            + "px"
+        );
+
+
+        document.body.appendChild(
+            heart
+        );
+
+
+        setTimeout(
+            ()=>{
+                heart.remove();
+            },
+            8500
+        );
+
+    }
+
+}
+
+
+/* =========================================================
+   PHOTO LOADING
+========================================================= */
+
+function loadPhoto(
+    input,
+    targetId
+){
+
+    const file =
+        input.files[0];
+
+    if(!file){
+        return;
+    }
+
+
+    if(
+        !file.type.startsWith("image/")
+    ){
+
+        alert(
+            "Please choose an image."
+        );
+
+        return;
+
+    }
+
+
+    const reader =
+        new FileReader();
+
+
+    reader.onload =
+        function(event){
+
+            const target =
+                document.getElementById(
+                    targetId
+                );
+
+
+            target.innerHTML = "";
+
+
+            const image =
+                document.createElement("img");
+
+
+            image.src =
+                event.target.result;
+
+
+            target.appendChild(
+                image
+            );
+
+        };
+
+
+    reader.readAsDataURL(file);
+
+}
+
+
+/* =========================================================
+   MUSIC
+========================================================= */
+
+const audio =
+    document.getElementById("audio");
+
+const record =
+    document.getElementById("record");
+
+const playButton =
+    document.getElementById("playButton");
+
+const songName =
+    document.getElementById("songName");
+
+
+/* load selected music */
+
+function loadMusic(input){
+
+    const file =
+        input.files[0];
+
+    if(!file){
+        return;
+    }
+
+
+    if(
+        !file.type.startsWith("audio/")
+    ){
+
+        alert(
+            "Please choose an audio file."
+        );
+
+        return;
+
+    }
+
+
+    const musicURL =
+        URL.createObjectURL(file);
+
+
+    audio.src =
+        musicURL;
+
+
+    audio.load();
+
+
+    let cleanName =
+        file.name
+        .replace(/\.[^/.]+$/,"")
+        .replace(/[_-]/g," ");
+
+
+    songName.textContent =
+        "♫ " +
+        cleanName +
+        " ♫";
+
+
+    /* Automatically play */
+
+    audio.play()
+        .then(()=>{
+
+            record.classList.add(
+                "playing"
+            );
+
+            playButton.textContent =
+                "❚❚ PAUSE";
+
+        })
+        .catch(()=>{
+
+            /*
+                Some browsers block
+                automatic playback.
+            */
+
+            playButton.textContent =
+                "▶ PLAY";
+
+        });
+
+}
+
+
+/* =========================================================
+   PLAY / PAUSE MUSIC
+========================================================= */
+
+function toggleMusic(){
+
+    if(!audio.src){
+
+        alert(
+            "Choose a song first using ADD SONG."
+        );
+
+        return;
+
+    }
+
+
+    if(audio.paused){
+
+        audio.play();
+
+        record.classList.add(
+            "playing"
+        );
+
+        playButton.textContent =
+            "❚❚ PAUSE";
+
+    }
+    else{
+
+        audio.pause();
+
+        record.classList.remove(
+            "playing"
+        );
+
+        playButton.textContent =
+            "▶ PLAY";
+
+    }
+
+}
+
+
+/* =========================================================
+   AUDIO EVENTS
+========================================================= */
+
+audio.addEventListener(
+    "play",
+    ()=>{
+
+        record.classList.add(
+            "playing"
+        );
+
+        playButton.textContent =
+            "❚❚ PAUSE";
+
+    }
+);
+
+
+audio.addEventListener(
+    "pause",
+    ()=>{
+
+        record.classList.remove(
+            "playing"
+        );
+
+        playButton.textContent =
+            "▶ PLAY";
+
+    }
+);
+
+
+audio.addEventListener(
+    "ended",
+    ()=>{
+
+        record.classList.remove(
+            "playing"
+        );
+
+        playButton.textContent =
+            "▶ PLAY";
+
+    }
+);
+
+
+/* =========================================================
+   VOLUME
+========================================================= */
+
+function changeVolume(value){
+
+    audio.volume =
+        Number(value);
+
+}
+
+
+/* =========================================================
+   KEYBOARD
+========================================================= */
+
+document.addEventListener(
+    "keydown",
+    event=>{
+
+        if(
+            !experience.classList.contains("show")
+        ){
+            return;
+        }
+
+
+        if(event.key === "ArrowRight"){
+
+            nextSlide();
+
+        }
+
+
+        if(event.key === "ArrowLeft"){
+
+            previousSlide();
+
+        }
+
+    }
+);
+
+
+/* =========================================================
+   TOUCH SWIPE
+========================================================= */
+
+let touchStart = 0;
+
+document.addEventListener(
+    "touchstart",
+    event=>{
+
+        touchStart =
+            event.changedTouches[0]
+                .screenX;
+
+    },
+    {passive:true}
+);
+
+
+document.addEventListener(
+    "touchend",
+    event=>{
+
+        const touchEnd =
+            event.changedTouches[0]
+                .screenX;
+
+
+        const distance =
+            touchEnd - touchStart;
+
+
+        if(
+            Math.abs(distance) < 50
+        ){
+            return;
+        }
+
+
+        if(distance < 0){
+
+            nextSlide();
+
+        }
+        else{
+
+            previousSlide();
+
+        }
+
+    },
+    {passive:true}
+);
+
+
+/* =========================================================
+   RANDOM HEARTS
+========================================================= */
+
+setInterval(
+    ()=>{
+
+        if(
+            experience.classList.contains(
+                "show"
+            )
+        ){
+
+            createHearts(1);
+
+        }
+
+    },
+    6500
+);
+
+
+/* =========================================================
+   INITIALIZE
+========================================================= */
+
+updateSlide();
+
+</script>
+
+</body>
+</html>
