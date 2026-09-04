@@ -2224,17 +2224,19 @@ body{
         height:auto;
 
         padding:
-            15px
+            12px
             8px
-            70px;
+            55px;
+
+        align-items:flex-start;
 
     }
 
     .book{
 
-        width:97vw;
+        width:min(100%,1100px);
 
-        height:720px;
+        height:clamp(560px,calc(100svh - 72px),720px);
 
     }
 
@@ -2244,6 +2246,16 @@ body{
             28px
             20px
             65px;
+
+        overflow-y:auto;
+        overflow-x:hidden;
+
+    }
+
+    .slide-content{
+
+        height:auto;
+        min-height:100%;
 
     }
 
@@ -2257,7 +2269,7 @@ body{
 
     .photo-frame{
 
-        width:205px;
+        width:min(100%,230px);
 
         padding-bottom:35px;
 
@@ -2289,14 +2301,33 @@ body{
 
     .collage{
 
-        transform:scale(.78);
+        display:grid;
+        grid-template-columns:repeat(2,minmax(0,1fr));
+        gap:18px 12px;
+        width:100%;
+        height:auto;
+        margin:20px 0 0;
 
-        transform-origin:
-            top center;
+    }
 
-        width:125%;
+    .small-photo,
+    .photo1,
+    .photo2,
+    .photo3,
+    .photo4,
+    .photo5{
 
-        margin-left:-12%;
+        position:relative;
+        inset:auto;
+        width:100%;
+        transform:none;
+
+    }
+
+    .small-photo .photo{
+
+        height:auto;
+        aspect-ratio:1;
 
     }
 
@@ -2400,7 +2431,34 @@ body{
 
     .book{
 
-        height:700px;
+        height:clamp(540px,calc(100svh - 64px),700px);
+
+    }
+
+    .slide{
+
+        padding:
+            24px
+            14px
+            55px;
+
+    }
+
+    .photo-frame{
+
+        width:min(100%,205px);
+
+    }
+
+    .message-card{
+
+        padding:18px;
+
+    }
+
+    .collage{
+
+        gap:14px 8px;
 
     }
 
@@ -2413,11 +2471,7 @@ body{
 
     .collage{
 
-        transform:scale(.67);
-
-        width:145%;
-
-        margin-left:-22%;
+        width:100%;
 
     }
 
